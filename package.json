@@ -1,0 +1,22 @@
+{
+  "name": "bot-interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google-cloud/dialogflow": "^3.3.0",
+    "axios": "^0.21.0",
+    "express": "^4.17.1",
+    "sendbird": "^3.0.140",
+    "uuid": "^8.3.1"
+  },
+  "dependencies": {
+    "ngrok": "^3.3.0"
+  }
+}
