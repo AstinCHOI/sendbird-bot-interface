@@ -1,4 +1,7 @@
-import { ENTRYPOINT, TOKEN, NICKNAME } from "./const";
+const secret = require('./secret');
+const ENTRYPOINT = secret.ENTRYPOINT;
+const TOKEN = secret.TOKEN;
+const DIALOGFLOW_PROJECT_ID = secret.DIALOGFLOW_PROJECT_ID;
 
 const axios = require('axios');
 const express = require('express');
@@ -7,8 +10,6 @@ const bodyParser = require('body-parser');
 const dialogflow = require('@google-cloud/dialogflow');
 const uuid = require('uuid');
 
-
-var DIALOGFLOW_PROJECT_ID = 'agent-wxys';
 
 app.get('/', async (req, res) => { 
   res.send(`Welcome to Sendbird Bot Interface`);

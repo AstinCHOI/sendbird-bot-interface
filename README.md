@@ -13,9 +13,13 @@ $ export GOOGLE_APPLICATION_CREDENTIALS='./agent-xxxx.json'
 
 ## secret.js
 
-export var ENTRYPOINT = 'https://api-yyyy.sendbird.com/v3/bots';  
-export var TOKEN = 'zzzz';  
-export var DIALOGFLOW_PROJECT_ID = 'agent-xxxx';  
+```javascript
+module.exports = Object.freeze({
+  ENTRYPOINT: "https://api-yyyy.sendbird.com/v3/bots",
+  TOKEN: "zzzz",
+  DIALOGFLOW_PROJECT_ID: "agent-xxxx",
+});
+```
 
 ## Demo
 
